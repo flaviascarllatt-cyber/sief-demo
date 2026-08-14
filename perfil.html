@@ -1,1 +1,55 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Perfil | SIEF</title><link rel="stylesheet" href="style.css"></head><body><header class="app-header"><a id="profileHome" class="brand" href="cliente.html"><span class="brand-mark">S</span><span><strong>SIEF</strong><small>Meu perfil</small></span></a><div><span id="userName"></span><button class="text-button" data-logout>Sair</button></div></header><div class="app-layout"><aside id="profileMenu"></aside><main class="app-main"><button id="menuToggle" class="menu-toggle" aria-label="Mostrar ou esconder menu">☰ Menu</button><p class="eyebrow">CONFIGURACOES</p><h1>Meu perfil</h1><p class="muted">Edite seus dados e escolha como prefere visualizar o sistema.</p><form id="profileForm" class="profile-form"><label for="profileName">Nome</label><input id="profileName" required minlength="3"><label for="profileEmail">E-mail</label><input id="profileEmail" type="email" required><label for="themeChoice">Tema</label><select id="themeChoice"><option value="light">Modo claro</option><option value="dark">Modo escuro</option></select><p id="profileFeedback" class="feedback" aria-live="polite"></p><button class="button" type="submit">Salvar alteracoes</button></form></main></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Perfil | SIEF</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header class="app-header">
+			<a id="profileHome" class="brand" href="cliente.html">
+				<span class="brand-mark">S</span>
+				<span>
+					<strong>SIEF</strong>
+					<small>Meu perfil</small>
+				</span>
+			</a>
+			<div>
+				<span id="userName"></span>
+				<button class="text-button" data-logout>Sair</button>
+			</div>
+		</header>
+
+		<div class="app-layout">
+			<aside id="profileMenu"></aside>
+
+			<main class="app-main">
+				<button id="menuToggle" class="menu-toggle" aria-label="Mostrar ou esconder menu">☰ Menu</button>
+
+				<p class="eyebrow">CONFIGURAÇÕES</p>
+				<h1>Meu perfil</h1>
+				<p class="muted">Edite seus dados e escolha como prefere visualizar o sistema.</p>
+
+				<form id="profileForm" class="profile-form">
+					<label for="profileName">Nome</label>
+					<input id="profileName" required minlength="3">
+
+					<label for="profileEmail">E-mail</label>
+					<input id="profileEmail" type="email" required>
+
+					<label for="themeChoice">Tema</label>
+					<select id="themeChoice">
+						<option value="light">Modo claro</option>
+						<option value="dark">Modo escuro</option>
+					</select>
+
+					<p id="profileFeedback" class="feedback" aria-live="polite"></p>
+					<button class="button" type="submit">Salvar alterações</button>
+				</form>
+			</main>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>

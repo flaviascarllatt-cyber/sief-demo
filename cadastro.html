@@ -1,1 +1,43 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cadastro | SIEF</title><link rel="stylesheet" href="style.css"></head><body class="auth-page"><main class="auth-box"><a class="brand centered" href="index.html"><span class="brand-mark">S</span><span><strong>SIEF</strong><small>Entregas e Fretes</small></span></a><h1>Crie sua conta</h1><p>Leva menos de dois minutos.</p><form id="registerForm"><label for="nome">Nome ou empresa</label><input id="nome" required minlength="3" autocomplete="name"><label for="cadEmail">E-mail</label><input id="cadEmail" type="email" required autocomplete="email"><label for="cadSenha">Crie uma senha</label><input id="cadSenha" type="password" required minlength="6" aria-describedby="senhaHelp"><small id="senhaHelp">Mínimo de 6 caracteres.</small><label for="confirmarSenha">Confirme a senha</label><input id="confirmarSenha" type="password" required minlength="6"><p id="registerFeedback" class="feedback" aria-live="polite"></p><button class="button full" type="submit">Criar conta</button></form><p class="center">Já possui cadastro? <a href="login.html">Entrar</a></p><a class="back" href="index.html">← Voltar ao início</a></main><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Cadastro | SIEF</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="auth-page">
+        <main class="auth-box">
+            <a class="brand centered" href="index.html">
+                <span class="brand-mark">S</span>
+                <span>
+                    <strong>SIEF</strong>
+                    <small>Entregas e Fretes</small>
+                </span>
+            </a>
+            <h1>Crie sua conta</h1>
+            <p>Leva menos de dois minutos.</p>
+            <form id="registerForm">
+                <label for="nome">Nome ou empresa</label>
+                <input id="nome" required minlength="3" autocomplete="name">
+
+                <label for="cadEmail">E-mail</label>
+                <input id="cadEmail" type="email" required autocomplete="email">
+
+                <label for="cadSenha">Crie uma senha</label>
+                <input id="cadSenha" type="password" required minlength="6" aria-describedby="senhaHelp">
+                <small id="senhaHelp">Mínimo de 6 caracteres.</small>
+
+                <label for="confirmarSenha">Confirme a senha</label>
+                <input id="confirmarSenha" type="password" required minlength="6">
+
+                <p id="registerFeedback" class="feedback" aria-live="polite"></p>
+                <button class="button full" type="submit">Criar conta</button>
+            </form>
+
+            <p class="center">Já possui cadastro? <a href="login.html">Entrar</a></p>
+            <a class="back" href="index.html">← Voltar ao início</a>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>

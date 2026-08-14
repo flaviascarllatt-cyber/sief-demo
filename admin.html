@@ -1,1 +1,81 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Administracao | SIEF</title><link rel="stylesheet" href="style.css"></head><body><header class="app-header"><a class="brand" href="admin.html"><span class="brand-mark">S</span><span><strong>SIEF</strong><small>Administracao</small></span></a><div><span id="userName"></span><button class="text-button" data-logout>Sair</button></div></header><div class="app-layout"><aside><a class="active" href="admin.html">Dashboard</a><a href="clientes.html">Clientes</a><a href="perfil.html">Perfil</a><button id="librasBtn" class="side-button">VLibras</button><button id="tutorialBtn" class="side-button">Tutorial guiado</button></aside><main class="app-main"><button id="menuToggle" class="menu-toggle" aria-label="Mostrar ou esconder menu">☰ Menu</button><p class="eyebrow">ADMINISTRACAO</p><h1>Visao geral da operacao</h1><section class="stats" id="adminStats"></section><p id="adminFeedback" class="success-message" role="status" hidden></p><section class="admin-report"><h2>Relatorio geral de pedidos</h2><p class="muted">Atualize o status; o cliente vera a mudanca imediatamente.</p><div class="table-wrap"><table><thead><tr><th>Pedido / Cliente</th><th>Carga</th><th>Rota</th><th>Valor</th><th>Status</th><th>Acao</th></tr></thead><tbody id="adminTable"></tbody></table></div></section></main></div><div id="tutorial" class="tutorial" hidden><div><button class="close" data-close-tutorial>&times;</button><p class="eyebrow">TUTORIAL</p><h2>Administracao simples</h2><ol><li>Veja os indicadores no topo.</li><li>Atualize um status na tabela.</li><li>O cliente recebe a mudanca na hora.</li></ol><button class="button" data-close-tutorial>Entendi!</button></div></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Administracao | SIEF</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header class="app-header">
+			<a class="brand" href="admin.html">
+				<span class="brand-mark">S</span>
+				<span>
+					<strong>SIEF</strong>
+					<small>Administração</small>
+				</span>
+			</a>
+			<div>
+				<span id="userName"></span>
+				<button class="text-button" data-logout>Sair</button>
+			</div>
+		</header>
+
+		<div class="app-layout">
+			<aside>
+				<a class="active" href="admin.html">Dashboard</a>
+				<a href="clientes.html">Clientes</a>
+				<a href="perfil.html">Perfil</a>
+				<button id="librasBtn" class="side-button">VLibras</button>
+				<button id="tutorialBtn" class="side-button">Tutorial guiado</button>
+			</aside>
+
+			<main class="app-main">
+				<button id="menuToggle" class="menu-toggle" aria-label="Mostrar ou esconder menu">☰ Menu</button>
+
+				<p class="eyebrow">ADMINISTRAÇÃO</p>
+				<h1>Visão geral da operação</h1>
+
+				<section class="stats" id="adminStats"></section>
+				<p id="adminFeedback" class="success-message" role="status" hidden></p>
+
+				<section class="admin-report">
+					<h2>Relatório geral de pedidos</h2>
+					<p class="muted">Atualize o status; o cliente verá a mudança imediatamente.</p>
+
+					<div class="table-wrap">
+						<table>
+							<thead>
+								<tr>
+									<th>Pedido / Cliente</th>
+									<th>Carga</th>
+									<th>Rota</th>
+									<th>Valor</th>
+									<th>Status</th>
+									<th>Acao</th>
+								</tr>
+							</thead>
+							<tbody id="adminTable"></tbody>
+						</table>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<div id="tutorial" class="tutorial" hidden>
+			<div>
+				<button class="close" data-close-tutorial>&times;</button>
+				<p class="eyebrow">TUTORIAL</p>
+				<h2>Administração simples</h2>
+				<ol>
+					<li>Veja os indicadores no topo.</li>
+					<li>Atualize um status na tabela.</li>
+					<li>O cliente recebe a mudança na hora.</li>
+				</ol>
+				<button class="button" data-close-tutorial>Entendi!</button>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
